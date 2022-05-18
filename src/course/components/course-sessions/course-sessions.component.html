@@ -1,0 +1,41 @@
+<div class="container">
+  <app-go-back></app-go-back>
+  <div class="content-container" fxLayout="row" fxLayoutGap="20px" fxLayout.lt-md="column">
+    <div class="card card-test" fxFlex="20">
+      <div class="card-container" fxLayout="row" fxLayoutGap="20px">
+        <div class="texts-container">
+          <p class="bold" fxLayout="row" fxLayoutGap="5px">2º Trimestre</p>
+          <p fxLayout="row" fxLayoutGap="5px">30/50 sesiones</p>
+        </div>
+        <img alt="60-percent" src="assets/images/60-percent.svg" />
+      </div>
+    </div>
+    <div class="card list" fxLayout="column" fxFlex="80">
+      <div class="title" fxLayoutAlign="space-between center">
+        <p class="bold">Sesiones del 2º trimestre</p>
+        <span>{{countViewedSessions}}/{{sessions.length}}</span>
+      </div>
+      <img src="assets/images/line.svg" />
+      <ng-container *ngFor="let session of sessions; trackBy: trackByFn">
+        <div class="session" fxLayout="row" fxLayoutAlign="space-between center"
+             [ngStyle] = "{'background-color': + session?.status === 2 ? '#F26C48' : '#FFFFFF' }"
+             style="padding: 13px 0; cursor: pointer;">
+          <div class="left-side" fxLayout="row" fxLayoutGap="10px" [ngClass]="{'selected': session?.status === 2}">
+            <p class="bold">{{session.number}}</p>
+            <p>{{session.text}}</p>
+          </div>
+          <div class="buttons" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+            <a *ngIf="session?.status == 2">
+              <img src="assets/images/random-white.svg">
+            </a>
+            <a [ngSwitch]="session.status" [ngClass]="{'selected': session?.status === 2}">
+              <img *ngSwitchCase="1" src="assets/images/view.svg">
+              <img *ngSwitchCase="2" src="assets/images/play.svg" (click)="goToIntroduction()">
+              <img *ngSwitchCase="3" src="assets/images/no-view.svg">
+            </a>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

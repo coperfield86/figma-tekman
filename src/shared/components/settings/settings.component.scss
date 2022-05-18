@@ -1,0 +1,50 @@
+.container {
+  padding: 35px 0 55px;
+  height: 100%;
+}
+
+.top,
+.bottom {
+  width: 100%;
+}
+
+title p {
+  align-self: center;
+  color: #3B3B3B;
+  font-size: 24px;
+  font-family: 'Popins', sans-serif;
+  text-align: center;
+}
+
+form {
+  padding: 80px 84px 0 ;
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  height: 50px;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #F26C48;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 0 #C7401B;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.bottom a {
+  text-decoration: underline;
+  color: #3B3B3B;
+}

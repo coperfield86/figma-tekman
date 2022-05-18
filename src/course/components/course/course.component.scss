@@ -1,0 +1,75 @@
+.container {
+  padding-top: 5%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.resume {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.buttons-container {
+  margin-top: 25px;
+  gap: 20px;
+
+  a {
+    gap: 16px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    color: #F26C48;
+    box-shadow: none;
+    padding: 0 28px;
+    border: 2px solid #F26C48;
+    border-radius: 5px;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  a.play {
+    background-color: #F26C48;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 0 #C7401B;
+  }
+}
+
+.test-container {
+  padding-top: 40px;
+
+  p {
+    font-size: 28px;
+  }
+}
+
+.card-container {
+  img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+  }
+}
+
+.card-test-container {
+  margin-top: 20px;
+}
+
+.card-test {
+  box-shadow: 0 4px 0 #BDBDBD;
+}
+
+.card-test:hover {
+  cursor: pointer;
+}
+
+.texts-container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}

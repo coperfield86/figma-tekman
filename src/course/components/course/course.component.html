@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="card">
+    <p class="title">Vuelve donde lo dejaste</p>
+    <p class="resume">2º Trimestre - Sesión 25, Ordinales, Fracciones y  Decimales</p>
+    <div class="buttons-container" fxLayout="row" fxLayout.lt-md="column">
+      <a class="play" fxLayoutAlign="center center">
+        <img alt="play" src="assets/images/play-white.svg">
+        Reproducción ordenada
+      </a>
+      <a fxLayoutAlign="center center">
+        <img alt="play" src="assets/images/random.svg">
+        Aleatorio
+      </a>
+      <a fxLayoutAlign="center center">
+        <img alt="play" src="assets/images/next.svg">
+        Siguiente sesión
+      </a>
+    </div>
+  </div>
+  <div class="test-container">
+    <p class="bold">Temario</p>
+    <div class="card-test-container" fxLayout="row" fxLayoutGap="20px" fxLayout.lt-sm="column">
+      <div class="card card-test" (click)="goToSessions(1)">
+        <div class="card-container" fxLayout="row" fxLayoutGap="15px">
+          <div class="texts-container">
+            <p class="bold" fxLayout="row" fxLayoutGap="5px">1º Trimestre</p>
+            <p fxLayout="row" fxLayoutGap="5px">50/50 sesiones</p>
+          </div>
+          <img alt="complete" src="assets/images/100-percent.svg" />
+        </div>
+      </div>
+      <div class="card card-test" (click)="goToSessions(2)">
+        <div class="card-container" fxLayout="row" fxLayoutGap="15px">
+          <div class="texts-container">
+            <p class="bold" fxLayout="row" fxLayoutGap="5px">2º Trimestre</p>
+            <p fxLayout="row" fxLayoutGap="5px">30/50 sesiones</p>
+          </div>
+          <img alt="60-percent" src="assets/images/60-percent.svg" />
+        </div>
+      </div>
+      <div class="card card-test" (click)="goToSessions(3)">
+        <div class="card-container" fxLayout="row" fxLayoutGap="15px">
+          <div class="texts-container">
+            <p class="bold" fxLayout="row" fxLayoutGap="5px">3º Trimestre</p>
+            <p fxLayout="row" fxLayoutGap="5px">0/50 sesiones</p>
+          </div>
+          <img alt="0-percent" src="assets/images/0-percent.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

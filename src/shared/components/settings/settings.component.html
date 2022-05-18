@@ -1,0 +1,36 @@
+<div class="container" fxLayout="column" fxLayoutAlign="space-between center">
+  <div class="top" fxLayout="column">
+    <div class="title" fxLayout="row" fxLayoutAlign="start center">
+      <a [matDialogClose]="true" fxFlex="40">
+        <img alt="" src="assets/images/arrow.svg">
+      </a>
+      <p class="bold">Configuración</p>
+    </div>
+    <form [formGroup]="form" fxLayout="column">
+      <mat-form-field class="filter-field">
+        <mat-label>Idioma</mat-label>
+        <mat-select formControlName="status_id">
+          <mat-option [value]="null"></mat-option>
+          <mat-option [value]="1">Español</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="filter-field">
+        <mat-label>Curso</mat-label>
+        <mat-select formControlName="status_id">
+          <mat-option [value]="null"></mat-option>
+          <mat-option [value]="1">1º de infantil</mat-option>
+          <mat-option [value]="2">2º de infantil</mat-option>
+          <mat-option [value]="3">3º de infantil</mat-option>
+          <mat-option [value]="4">4º de infantil</mat-option>
+          <mat-option [value]="5">5º de infantil</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="bottom" fxLayout="column" fxLayoutAlign="center center">
+    <button type="submit">
+      Guardar cambios
+    </button>
+    <a [matDialogClose]="true">Cerrar sin guardar</a>
+  </div>
+</div>
